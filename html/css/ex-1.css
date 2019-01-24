@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+body {
+    background-color: #2f2d27;        
+    font-family: 'Oswald', 'Futura', sans-serif;
+    font-size: 1em;
+    text-align: center;    
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+/* style for header */
+header {
+    padding:0px;color: bisque;
+    background-color:#F88379;
+    background: url(../img/header.jpg) center #333 no-repeat;
+    background-size: cover;
+    text-shadow: 0px 0px 5px #000;
+}
+#logo{
+    display: inline-block;    
+    margin-bottom: 0px;
+    margin-top: 2px;
+    text-align: left;
+    vertical-align: baseline;
+    width: 100%;
+    height: 250px;
+    border: 1px dashed whitesmoke;
+    background-image: url(../img/deer-right-transparent-solidwhite.png);
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    background-position: right bottom;
+}
+header nav{
+    margin-top: 0;
+    font-variant:small-caps;       
+    font-size: 1.5em;
+}
+nav ul{
+    list-style-type: none;
+    border: 10px solid #FFFFFF;
+    padding-left: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-flow: row;
+    column-gap: 10px;
+}
+nav a {
+    display:block;
+    text-decoration: none;
+    color:white; 
+    background-color:#F88379;       
+    border: solid 2px white; 
+    border-radius: 10px;    
+    padding-left:0.5em;
+    padding-right:0.5em;
+}
+nav a:hover { 
+    background-color: white; 
+    color: #F88379; 
+}
+/* style for the main part */
+main {
+    max-width: 960px;
+    margin: 0 auto 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: 300px 300px;
+    grid-auto-flow: row;
+    column-gap: 20px;
+}
+article {
+    position: relative;
+    display: block;
+}
+.article-img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.article-title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 2px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.article-title::after {
+    content: url(../img/deer-left-transparent-solidblack-50.png);
+    width: 40px;
+    height: 40px;
+}
+.article-title::first-letter { font-size: 2em; }
+/* style for aside */
+aside {
+    margin-left: 10px;
+    background-color: #F4EBC3;
+}
+/* style for footer */
+footer {  
+    color: white;
+}
